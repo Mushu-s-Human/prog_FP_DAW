@@ -15,11 +15,13 @@ public class Ejercicio_2 {
      */
     public static void main(String[] args) 
     {
-
-        String meses[]={"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septbre","Octbre","Novbre","Dcbre"};
+        //Creo los arrays de meses y dias. En este caso no me importa que la posición 0 sea Enero y 31 respectivamente, ya que no hay input humano. Basta con inicializar i en 0 en lugar de 1.
+        String meses[]={"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
         int dias[]={31,28,31,30,31,30,31,31,30,31,30,31};
+        //Inicializo i y totaldias.
         int i=0;
         int totaldias =0;
+        //Creo un bucle que sume los días de todos los meses hasta llegar a Junio y muestro el resultado.
         while(i<6)
         {
             i++;
