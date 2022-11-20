@@ -1,0 +1,38 @@
+/* Hola, referente a la tarea4-1 algunos me preguntáis cómo podríamos describir cada ejercicio en forma de método.
+
+Siempre debéis buscar la genericidad.
+
+Por ejemplo en el ejercicio1 se dice:
+
+1)Leer 5 números y mostrarlos en el mismo orden introducido
+
+Está pidiendo que creemos un método que acepte un número entero (n aunque nosotros le pasaremos el valor 5 cuando lo llamemos desde el main), dicho método leerá por teclado n números enteros, los guardará en un array unidimensional y a continuación los volverá a mostrar en el mismo orden en que se introdujeron:
+*/
+   public static void metodo1(int n)
+    {
+        Scanner teclado;
+        teclado = new Scanner(System.in);
+        
+        //Creación y dimensión del array
+        int miarray[];
+        miarray = new int[n];
+        
+        //Lectura por teclado y almacenamiento en array
+        for (int i = 0; i < n; i++)
+        {
+            System.out.println("Introduzca dato: ");
+            miarray[i] = teclado.nextInt();
+        }
+        
+        //REcorrrido y muestra del array
+        for (int i = 0; i < n; i++)         
+            System.out.print(miarray[i] + " ");
+        
+    }
+
+
+//Para llamar al método, en el main habría que hacer:
+
+metodo1(5);
+
+//El método no devuelve nada
